@@ -62,18 +62,22 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  extract
-  cp
-  web-search
-  command-not-found
-  vi-mode
   colorize
-  copyfile
+  command-not-found
   copydir
+  copyfile
+  cp
   dircycle
-  vundle
+  extract
+  git
   themes
+  vi-mode
+  vundle
+  wd
+  web-search
+  zsh-autosuggestions
+  zsh-navigation-tools
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -128,16 +132,6 @@ alias agpp='ag --path-to-ignore ~/.ignore --cpp'
 
 alias emacs='emacs --insecure'
 
-alias tmb='cd ~/Perforce/cbrock_cn/package/traffic_manager_base/main'
-alias tme='cd ~/Perforce/cbrock_cn/package/traffic_manager_ethernet/rel/7.x'
-alias sme='cd ~/Perforce/cbrock_cn/package/switch_manager_ethernet/rel/10.x'
-alias seq='cd ~/Perforce/cbrock_cn/package/switch_ethernet_bcm_qumran/main'
-alias dnx='cd ~/Perforce/cbrock_cn/package/broadcom_dnx_utilities/main'
-alias port='cd ~/Perforce/cbrock_cn/package/interface_info/main'
-alias ietf='cd ~/Perforce/cbrock_cn/package/ietf_interfaces_sme_status_ddl/main'
-alias lagcfg='cd ~/Perforce/cbrock_cn/package/ietf_interfaces_tme_config_lag_ddl/main'
-alias osa='cd ~/Perforce/cbrock_osa_ne_olt/osa_ne_olt'
-alias osabld='cd ~/Perforce/cbrock_osa_ne_olt/bld_1u_olt_16port'
 alias osarmbld='rm -rf ~/Perforce/cbrock_osa_ne_olt/bld_1u_olt_16port'
 alias srcrc='source ~/.zshrc'
 alias edrc='vim ~/.zshrc'
