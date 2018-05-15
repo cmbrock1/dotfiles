@@ -137,3 +137,24 @@ alias srcrc='source ~/.zshrc'
 alias edrc='vim ~/.zshrc'
 alias config='/usr/bin/git --git-dir=/home/developer/.cfg/ --work-tree=/home/developer'
 alias code='visual-studio-code'
+x(){
+    if [ -f $1 ] ; then
+            case $1 in
+                    *.tar.bz2)   tar xvjf $1    ;;
+                    *.tar.gz)    tar xvzf $1    ;;
+                    *.bz2)       bunzip2 $1     ;;
+                    *.rar)       unrar x $1     ;;
+                    *.gz)        gunzip $1      ;;
+                    *.tar)       tar xvf $1     ;;
+                    *.tbz2)      tar xvjf $1    ;;
+                    *.tgz)       tar xvzf $1    ;;
+                    *.zip)       unzip $1       ;;
+                    *.Z)         uncompress $1  ;;
+                    *.7z)        7z x $1        ;;
+                    *)           echo "Unable to extract '$1'" ;;
+            esac
+    else
+            echo "'$1' is not a valid file"
+    fi
+}
+export PATH=${PATH}:/home/developer/p4v-2018.2.1652877/bin

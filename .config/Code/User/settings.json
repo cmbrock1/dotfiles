@@ -14,13 +14,13 @@
         "**/CVS": true,
         "**/.DS_Store": true
     },
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
     "vscodeWorkspaceSwitcher.paths": [
         "~/vs-code"
     ],
     "vim.neovimPath": "/home/developer/neovim/bin/nvim",
-    "vim.enableNeovim": true,
+    "vim.enableNeovim": false,
     "workbench.startupEditor": "welcomePage",
     "workbench.colorTheme": "Plastic",
     "vim.overrideCopy": true,
@@ -32,6 +32,8 @@
         "<C-a>": false,
         "<C-f>": false,
         "<C-t>": false,
+        "<C-z>": false,
+        "<C-y>": false
     },
     "vim.cmdLineInitialColon": true,
     "vim.visualstar": true,
@@ -70,4 +72,5 @@
     "terminal.explorerKind": "internal",
     "terminal.external.linuxExec": "terminology",
     "editor.codeLens": true,
+    "symbolOutline.doSort": true,
 }
